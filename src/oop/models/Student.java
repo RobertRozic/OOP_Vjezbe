@@ -1,20 +1,20 @@
 package oop.models;
 
-public class Student {
-    private String ime;
-    private String prezime;
+public class Student extends Osoba {
+    private String brojIndeksa;
 
-    public Student() {
-        ime = "Nepoznato";
-        prezime = "Nepoznato";
+    public Student(String ime, String prezime, String brojIndeksa) {
+        super(ime, prezime);
+        this.brojIndeksa = brojIndeksa;
     }
 
-    public Student(String ime, String prezime) {
-        this.ime = ime;
-        this.prezime = prezime;
+    public void ispisiStudenta() {
+        super.ispisi();
+        System.out.println("Indeks: " + brojIndeksa);
     }
 
-    public void ispisiPodatke() {
-        System.out.println(ime + " " + prezime);
+    @Override
+    public void ispisi() {
+        System.out.println("Student: " + ime + " " + prezime + " " + brojIndeksa);
     }
 }

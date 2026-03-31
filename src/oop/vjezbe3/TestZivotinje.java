@@ -13,5 +13,7 @@ public class TestZivotinje {
         z1.glasajSe();
         z2.glasajSe();
         z3.glasajSe();
+
+        String poruka = "Objektno orijentirano programiranje";
     }
 }

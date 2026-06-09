@@ -1,0 +1,4 @@
+Ana;85
+Marko;72
+Ivana;91
+Test;12
